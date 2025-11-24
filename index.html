@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main-Helfer Nachhilfe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f3f8f3;
+      color: #2f3e2f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #44a06f, #2e8b57);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: #2e6d47;
+    }
+
+    .subjects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .subject-card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .subject-icon {
+      width: 60px;
+      height: 60px;
+      background: #44a06f;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 15px;
+      color: white;
+      font-size: 1.7rem;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .subject-info {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #e8f7ef;
+      padding: 20px;
+      border-radius: 0 0 16px 16px;
+      transition: 0.4s ease;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .subject-card:hover .subject-info {
+      top: 55%;
+    }
+
+    .price-box {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      max-width: 500px;
+      margin: 40px auto;
+    }
+
+    .price-box h3 {
+      margin-top: 0;
+      color: #2e6d47;
+      font-size: 1.6rem;
+    }
+
+    .price-box p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    .contact-form label {
+      font-weight: 600;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px;
+      border-radius: 8px;
+      border: 1px solid #b7c9b7;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background: #44a06f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #2e8b57;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #557a55;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Main-Helfer</h1>
+  <p>Professionelle Nachhilfe für alle Klassenstufen</p>
+</header>
+
+<div class="content">
+  <h2 class="section-title">Fächerangebot</h2>
+
+  <div class="subjects-grid">
+
+    <div class="subject-card">
+      <div class="subject-icon">➗</div>
+      <h3>Mathe</h3>
+      <div class="subject-info">
+        Individuelle Matheförderung von Grundschule bis Oberstufe.
+      </div>
+    </div>
+
+    <div class="subject-card">
+      <div class="subject-icon">📜</div>
+      <h3>Latein</h3>
+      <div class="subject-info">
+        Grammatik, Übersetzungen und Prüfungsvorbereitung.
+      </div>
+    </div>
+
+    <div class="subject-card">
+      <div class="subject-icon">📚</div>
+      <h3>Deutsch</h3>
+      <div class="subject-info">
+        Texte, Rechtschreibung, Grammatik und Literatur.
+      </div>
+    </div>
+
+    <div class="subject-card">
+      <div class="subject-icon">🏺</div>
+      <h3>Geschichte</h3>
+      <div class="subject-info">
+        Verständnis historischer Zusammenhänge und Epochen.
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="section-title">Preise</h2>
+
+  <div class="price-box">
+    <h3>Einzelunterricht</h3>
+    <p><strong>45 Minuten:</strong> 15 €</p>
+    <p><strong>60 Minuten:</strong> 20 €</p>
+    <p><strong>Online oder vor Ort möglich</strong></p>
+  </div>
+
+  <h2 class="section-title">Kontakt</h2>
+
+  <div class="contact-form">
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Nachricht</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Nachricht senden</button>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Main-Helfer – Nachhilfe für alle Klassenstufen
+</footer>
+
+</body>
+</html>
